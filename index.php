@@ -38,28 +38,66 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    <h1>Acesse sua conta</h1>
-    <form action="" method="POST">
-        <p>
-            <label> Email</label>
-            <input type="text" name="email">
-        </p>
-        <p>
-            <label> Senha</label>
-            <input type="password" name="senha">
-        </p>
-        <p>
-            <button type="submit">Entrar</button>
-        </p>
-    </form>
-</body>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style/style.css">
+
+        <title>Login</title>
+
+    </head>
+
+    <body>
+
+        <div id="login">
+
+            <form class="card" action="" method="POST">
+
+                <div class="card-header">
+
+                    <h2>Acesse sua conta</h2>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-content-area">
+
+                        <label>Email</label>
+
+                        <input type="text" id="usuario" name="email">
+
+                    </div>
+
+                    <div class="card-content-area">
+
+                        <label>Senha</label>
+
+                        <input type="password" id="password" name="senha">
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <button type="submit" class="submit">Entrar</button>
+
+                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </body>
+
 </html>
